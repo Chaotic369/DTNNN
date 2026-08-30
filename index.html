@@ -9,15 +9,15 @@
     <style>
         [x-cloak] { display: none !important; }
         
-        /* Dark Neumorphic + Glow Styles */
-                .neu-romance { box-shadow: 6px 6px 16px #0a0305, -6px -6px 16px #20070b, 0 0 20px rgba(244, 63, 94, 0.3); background: #150508; border: 1px solid rgba(244, 63, 94, 0.1); }
-                .neu-romance-pressed { box-shadow: inset 6px 6px 12px #0a0305, inset -6px -6px 12px #20070b, inset 0 0 15px rgba(244, 63, 94, 0.4); background: #150508; border: 1px solid rgba(244, 63, 94, 0.3); }
+        /* Dark Glassmorphism + Glow Styles */
+                .glass-romance { background: rgba(244, 63, 94, 0.05); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(244, 63, 94, 0.15); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3), 0 0 20px rgba(244, 63, 94, 0.2); }
+                .glass-romance-pressed { background: rgba(244, 63, 94, 0.1); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(244, 63, 94, 0.3); box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.4), 0 0 15px rgba(244, 63, 94, 0.3); }
         
-                .neu-midnight { box-shadow: 6px 6px 16px #020409, -6px -6px 16px #080e1f, 0 0 20px rgba(129, 140, 248, 0.3); background: #050914; border: 1px solid rgba(129, 140, 248, 0.1); }
-                .neu-midnight-pressed { box-shadow: inset 6px 6px 12px #020409, inset -6px -6px 12px #080e1f, inset 0 0 15px rgba(129, 140, 248, 0.4); background: #050914; border: 1px solid rgba(129, 140, 248, 0.3); }
+                .glass-midnight { background: rgba(129, 140, 248, 0.05); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(129, 140, 248, 0.15); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3), 0 0 20px rgba(129, 140, 248, 0.2); }
+                .glass-midnight-pressed { background: rgba(129, 140, 248, 0.1); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(129, 140, 248, 0.3); box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.4), 0 0 15px rgba(129, 140, 248, 0.3); }
         
-                .neu-sunshine { box-shadow: 6px 6px 16px #080400, -6px -6px 16px #200e02, 0 0 20px rgba(251, 191, 36, 0.3); background: #140c01; border: 1px solid rgba(251, 191, 36, 0.1); }
-                .neu-sunshine-pressed { box-shadow: inset 6px 6px 12px #080400, inset -6px -6px 12px #200e02, inset 0 0 15px rgba(251, 191, 36, 0.4); background: #140c01; border: 1px solid rgba(251, 191, 36, 0.3); }
+                .glass-sunshine { background: rgba(251, 191, 36, 0.05); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(251, 191, 36, 0.15); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3), 0 0 20px rgba(251, 191, 36, 0.2); }
+                .glass-sunshine-pressed { background: rgba(251, 191, 36, 0.1); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(251, 191, 36, 0.3); box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.4), 0 0 15px rgba(251, 191, 36, 0.3); }
 
         /* Slow Float Animations */
         @keyframes float-slow {
@@ -254,39 +254,39 @@
                 shareUrl: '',
                 copied: false,
                 
-                // Cute Neuromorphic Theme Engine
+                // Cute Glassmorphic Theme Engine
                                 activeTheme: 'romance',
                                 themeStyles: {
                                     romance: {
                                         bg: 'bg-[#150508]',
                                         text: 'text-rose-200',
-                                        neu: 'neu-romance',
-                                        neuPressed: 'neu-romance-pressed',
-                                        btn: 'neu-romance hover:opacity-100 hover:shadow-[0_0_25px_rgba(244,63,94,0.6)]',
+                                        neu: 'glass-romance',
+                                        neuPressed: 'glass-romance-pressed',
+                                        btn: 'glass-romance hover:opacity-100 hover:shadow-[0_0_25px_rgba(244,63,94,0.6)]',
                                         gradientText: 'from-rose-400 to-pink-400',
                                         emojis: ['🌸','💖','🎀','✨','🧸','🍓','💝']
                                     },
                                     midnight: {
                                         bg: 'bg-[#050914]',
                                         text: 'text-indigo-200',
-                                        neu: 'neu-midnight',
-                                        neuPressed: 'neu-midnight-pressed',
-                                        btn: 'neu-midnight hover:opacity-100 hover:shadow-[0_0_25px_rgba(129,140,248,0.6)]',
+                                        neu: 'glass-midnight',
+                                        neuPressed: 'glass-midnight-pressed',
+                                        btn: 'glass-midnight hover:opacity-100 hover:shadow-[0_0_25px_rgba(129,140,248,0.6)]',
                                         gradientText: 'from-indigo-400 to-purple-400',
                                         emojis: ['🌙','✨','🦉','💤','🌌','💙','🌠']
                                     },
                                     sunshine: {
                                         bg: 'bg-[#140c01]',
                                         text: 'text-amber-200',
-                                        neu: 'neu-sunshine',
-                                        neuPressed: 'neu-sunshine-pressed',
-                                        btn: 'neu-sunshine hover:opacity-100 hover:shadow-[0_0_25px_rgba(251,191,36,0.6)]',
+                                        neu: 'glass-sunshine',
+                                        neuPressed: 'glass-sunshine-pressed',
+                                        btn: 'glass-sunshine hover:opacity-100 hover:shadow-[0_0_25px_rgba(251,191,36,0.6)]',
                                         gradientText: 'from-orange-400 to-yellow-400',
                                         emojis: ['☀️','🌻','🐥','🍯','💛','🌼','🐝']
                                     }
                                 },
 
-                form: {
+                                                form: {
                     to: '', from: '', msg: '', theme: 'romance',
                     songs: [{url: '', title: '', note: ''}]
                 },
