@@ -9,15 +9,15 @@
     <style>
         [x-cloak] { display: none !important; }
         
-        /* Neumorphic Styles */
-        .neu-romance { box-shadow: 6px 6px 16px #d9c2c4, -6px -6px 16px #ffffff; background: #ffe4e6; }
-        .neu-romance-pressed { box-shadow: inset 6px 6px 12px #d9c2c4, inset -6px -6px 12px #ffffff; background: #ffe4e6; }
+        /* Dark Neumorphic + Glow Styles */
+                .neu-romance { box-shadow: 6px 6px 16px #0a0305, -6px -6px 16px #20070b, 0 0 20px rgba(244, 63, 94, 0.3); background: #150508; border: 1px solid rgba(244, 63, 94, 0.1); }
+                .neu-romance-pressed { box-shadow: inset 6px 6px 12px #0a0305, inset -6px -6px 12px #20070b, inset 0 0 15px rgba(244, 63, 94, 0.4); background: #150508; border: 1px solid rgba(244, 63, 94, 0.3); }
         
-        .neu-midnight { box-shadow: 8px 8px 16px #221f57, -8px -8px 16px #403d9b; background: #312e81; }
-        .neu-midnight-pressed { box-shadow: inset 8px 8px 16px #221f57, inset -8px -8px 16px #403d9b; background: #312e81; }
+                .neu-midnight { box-shadow: 6px 6px 16px #020409, -6px -6px 16px #080e1f, 0 0 20px rgba(129, 140, 248, 0.3); background: #050914; border: 1px solid rgba(129, 140, 248, 0.1); }
+                .neu-midnight-pressed { box-shadow: inset 6px 6px 12px #020409, inset -6px -6px 12px #080e1f, inset 0 0 15px rgba(129, 140, 248, 0.4); background: #050914; border: 1px solid rgba(129, 140, 248, 0.3); }
         
-        .neu-sunshine { box-shadow: 6px 6px 16px #d8cfa9, -6px -6px 16px #ffffff; background: #fef3c7; }
-        .neu-sunshine-pressed { box-shadow: inset 6px 6px 12px #d8cfa9, inset -6px -6px 12px #ffffff; background: #fef3c7; }
+                .neu-sunshine { box-shadow: 6px 6px 16px #080400, -6px -6px 16px #200e02, 0 0 20px rgba(251, 191, 36, 0.3); background: #140c01; border: 1px solid rgba(251, 191, 36, 0.1); }
+                .neu-sunshine-pressed { box-shadow: inset 6px 6px 12px #080400, inset -6px -6px 12px #200e02, inset 0 0 15px rgba(251, 191, 36, 0.4); background: #140c01; border: 1px solid rgba(251, 191, 36, 0.3); }
 
         /* Slow Float Animations */
         @keyframes float-slow {
@@ -255,36 +255,36 @@
                 copied: false,
                 
                 // Cute Neuromorphic Theme Engine
-                activeTheme: 'romance',
-                themeStyles: {
-                    romance: {
-                        bg: 'bg-[#ffe4e6]',
-                        text: 'text-rose-900',
-                        neu: 'neu-romance',
-                        neuPressed: 'neu-romance-pressed',
-                        btn: 'neu-romance hover:opacity-90',
-                        gradientText: 'from-rose-500 to-pink-500',
-                        emojis: ['🌸','💖','🎀','✨','🧸','🍓','💝']
-                    },
-                    midnight: {
-                        bg: 'bg-[#312e81]',
-                        text: 'text-indigo-100',
-                        neu: 'neu-midnight',
-                        neuPressed: 'neu-midnight-pressed',
-                        btn: 'neu-midnight hover:opacity-90',
-                        gradientText: 'from-indigo-300 to-purple-300',
-                        emojis: ['🌙','✨','🦉','💤','🌌','💙','🌠']
-                    },
-                    sunshine: {
-                        bg: 'bg-[#fef3c7]',
-                        text: 'text-amber-900',
-                        neu: 'neu-sunshine',
-                        neuPressed: 'neu-sunshine-pressed',
-                        btn: 'neu-sunshine hover:opacity-90',
-                        gradientText: 'from-orange-500 to-yellow-500',
-                        emojis: ['☀️','🌻','🐥','🍯','💛','🌼','🐝']
-                    }
-                },
+                                activeTheme: 'romance',
+                                themeStyles: {
+                                    romance: {
+                                        bg: 'bg-[#150508]',
+                                        text: 'text-rose-200',
+                                        neu: 'neu-romance',
+                                        neuPressed: 'neu-romance-pressed',
+                                        btn: 'neu-romance hover:opacity-100 hover:shadow-[0_0_25px_rgba(244,63,94,0.6)]',
+                                        gradientText: 'from-rose-400 to-pink-400',
+                                        emojis: ['🌸','💖','🎀','✨','🧸','🍓','💝']
+                                    },
+                                    midnight: {
+                                        bg: 'bg-[#050914]',
+                                        text: 'text-indigo-200',
+                                        neu: 'neu-midnight',
+                                        neuPressed: 'neu-midnight-pressed',
+                                        btn: 'neu-midnight hover:opacity-100 hover:shadow-[0_0_25px_rgba(129,140,248,0.6)]',
+                                        gradientText: 'from-indigo-400 to-purple-400',
+                                        emojis: ['🌙','✨','🦉','💤','🌌','💙','🌠']
+                                    },
+                                    sunshine: {
+                                        bg: 'bg-[#140c01]',
+                                        text: 'text-amber-200',
+                                        neu: 'neu-sunshine',
+                                        neuPressed: 'neu-sunshine-pressed',
+                                        btn: 'neu-sunshine hover:opacity-100 hover:shadow-[0_0_25px_rgba(251,191,36,0.6)]',
+                                        gradientText: 'from-orange-400 to-yellow-400',
+                                        emojis: ['☀️','🌻','🐥','🍯','💛','🌼','🐝']
+                                    }
+                                },
 
                 form: {
                     to: '', from: '', msg: '', theme: 'romance',
